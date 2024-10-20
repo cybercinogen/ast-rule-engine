@@ -13,6 +13,8 @@ def register_custom_functions():
     custom_functions['total_user_spend'] = total_user_spend
 
 def evaluate_custom_function(function_name, data):
-    if function_name in custom_functions:
-        return custom_functions[function_name](data)
-    raise ValueError(f"Custom function '{function_name}' not found")
+    """Evaluate custom functions like total_user_spend."""
+    if function_name == "total_user_spend":
+        return total_user_spend(data)  # Call the function if it matches
+    else:
+        raise ValueError(f"Custom function '{function_name}' not found")
