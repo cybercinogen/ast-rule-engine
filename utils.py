@@ -1,11 +1,13 @@
 # utils.py
 
+# Define allowed attributes globally
 allowed_attributes = {"age", "salary", "experience", "department"}
 
 def parse_condition(condition):
     """
     Parse a condition string (e.g., "age > 30") into attribute, operator, and value.
     """
+    print(f"Parsing condition: {condition}")  # Debug output
     if '>' in condition:
         attribute, value = condition.split('>')
         if not attribute or not value:
@@ -33,6 +35,7 @@ def validate_attributes(attribute):
     """
     Validates that the attribute is part of the allowed attribute set.
     """
+    print(f"Validating attribute: {attribute}")  # Debug output
     if attribute not in allowed_attributes:
         raise ValueError(f"Invalid attribute: {attribute}")
 
