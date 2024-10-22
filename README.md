@@ -19,7 +19,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/your-repository/ast-rule-engine.git
+git clone https://github.com/cybercinogen/ast-rule-engine.git
 cd ast-rule-engine
 Create a Virtual Environment (optional but recommended):
 
@@ -50,8 +50,7 @@ Copy code
 ├── combine_rules.py        # Combines multiple rules using logical operators.
 ├── ast_node.py             # Defines the Node class for representing AST nodes.
 ├── utils.py                # Helper functions for parsing conditions and validating attributes.
-├── templates
-│   └── index.html          # Frontend for interacting with the rule engine.
+├── index.html              # Frontend for interacting with the rule engine.
 ├── requirements.txt        # Python dependencies for the project.
 ├── README.md               # Project documentation.
 └── rules.db                # SQLite database file for storing rules.
